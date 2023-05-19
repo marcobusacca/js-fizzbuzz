@@ -3,3 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+/* UTILITIES */
+    .h_100vh{
+        height: 100vh;
+    }
+/* FINE UTILITIES */
