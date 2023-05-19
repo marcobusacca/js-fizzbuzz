@@ -16,14 +16,24 @@ PROBLEMA : Scrivi un programma che stampi in Console i numeri da 1 a 100.
 
         1.1.2 - Stampa il risultato nel DOM;
 
+        1.1.3 - Applica all'elemento inserito nel DOM uno stile (STILE_1);
+
     1.2 - ALTRIMENTI SE il numero stampato è multiplo soltanto di 3, ALLORA
 
         1.2.1 - Al posto del numero, stampa “Fizz”;
 
         1.2.2 - Stampa il risultato nel DOM;
 
+        1.2.3 - Applica all'elemento inserito nel DOM uno stile (STILE_2);
+
     1.3 - ALTRIMENTI SE il numero stampato è multiplo soltanto di 5, ALLORA
 
         1.3.1 - Al posto del numero, stampa “Buzz”;
 
         1.3.2 - Stampa il risultato nel DOM;
+
+        1.3.3 - Applica all'elemento inserito nel DOM uno stile (STILE_3);
+
+
+
+2 - Dai uno stile a tutta la pagina HTML (Tramite Bootstrap Oppure CSS)
