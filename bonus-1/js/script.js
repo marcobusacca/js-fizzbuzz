@@ -34,5 +34,3 @@ for(let i= 1; i<=100; i++){
         output_number.append(number);
     }
 }
-// STAMPIAMO NEL TAG HTML CON ID "OUTPUT" IL CONTENUTO DELLA VARIABILE OUTPUT NUMBER
-
