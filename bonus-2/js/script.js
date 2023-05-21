@@ -6,7 +6,7 @@ const output = document.getElementById('output');
 let output_row = document.createElement('div');
 output_row.classList.add('row', 'justify-content-center', 'm-auto');
 
-// DICHIARAZIONE E INIZIALIZZAZIONE VARIABILE CONTANTORE CELLE
+// DICHIARAZIONE E INIZIALIZZAZIONE VARIABILE CONTATORE CELLE
 let cell = 1;
 
 // DICHIARAZIONE E INIZIALIZZAZIONE CONSTANTE SIZE MASSIMA CELLE
@@ -56,12 +56,12 @@ for(let i = 1; i <= 100; i++){
     // CONTROLLO CHE I NUMERI INSERITI NELLA ROW SIANO MASSIMO 7
     if (cell < cell_size){
 
-        // INCREMENTO VARIABILE CONTANTORE CELLE
+        // INCREMENTO VARIABILE CONTATORE CELLE
         cell++;
 
     } else{
 
-        // RESET VARIABILE CONTANTORE CELLE
+        // RESET VARIABILE CONTATORE CELLE
         cell = 1;
 
         // RESET VARIABILE CON TAG DIV E CLASSE "ROW"
