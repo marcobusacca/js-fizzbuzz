@@ -4,7 +4,7 @@ const output = document.getElementById('output');
 
 // DICHIARAZIONE E INIZIALIZZAZIONE VARIABILE CON TAG DIV E CLASSE "ROW", DA INSERIRE ALL'INTERNO CONSTANTE "OUTPUT"
 let output_row = document.createElement('div');
-output_row.classList.add('row', 'justify-content-center', 'm-auto', 'w-100');
+output_row.classList.add('row', 'justify-content-center', 'm-auto');
 
 // DICHIARAZIONE E INIZIALIZZAZIONE VARIABILE CONTANTORE CELLE
 let cell = 1;
@@ -15,7 +15,7 @@ const cell_size = 7;
 // CICLO FOR CHE STAMPA NUMERI DA 1 A 100
 for(let i = 1; i <= 100; i++){    
 
-    // DICHIARAZIONE E INIZIALIZZAZIONE CONSTANTE CON TAG DIV, DA INSERIRE ALL'INTERNO CONSTANTE "OUTPUT_ROW"
+    // DICHIARAZIONE E INIZIALIZZAZIONE CONSTANTE CON TAG DIV, DA INSERIRE ALL'INTERNO DELLA VARIABILE "OUTPUT_ROW"
     const output_number = document.createElement('div');
     output_number.classList.add('output_number_col', 'd-flex', 'justify-content-center', 'align-items-center', 'fw-bold');
 
@@ -47,10 +47,10 @@ for(let i = 1; i <= 100; i++){
         output_number.append(number);
     }
 
-    // INSERIMENTO CONTENUTO CONSTANTE "OUTPUT_NUMBER" ALL'INTERNO DELLA COSTANTE "OUTPUT_ROW"
+    // INSERIMENTO CONTENUTO CONSTANTE "OUTPUT_NUMBER" ALL'INTERNO DELLA VARIABILE "OUTPUT_ROW"
     output_row.append(output_number);
     
-    // INSERIMENTO CONTENUTO CONSTANTE "OUTPUT_ROW" ALL'INTERNO DELLA COSTANTE "OUTPUT"
+    // INSERIMENTO CONTENUTO VARIABILE "OUTPUT_ROW" ALL'INTERNO DELLA COSTANTE "OUTPUT"
     output.append(output_row);
 
     // CONTROLLO CHE I NUMERI INSERITI NELLA ROW SIANO MASSIMO 7
@@ -66,6 +66,6 @@ for(let i = 1; i <= 100; i++){
 
         // RESET VARIABILE CON TAG DIV E CLASSE "ROW"
         output_row = document.createElement('div');
-        output_row.classList.add('row', 'justify-content-center', 'm-auto', 'w-100');
+        output_row.classList.add('row', 'justify-content-center', 'm-auto');
     }
 }
