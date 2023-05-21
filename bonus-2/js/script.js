@@ -4,7 +4,7 @@ const output = document.getElementById('output');
 
 // DICHIARAZIONE E INIZIALIZZAZIONE VARIABILE CON TAG DIV E CLASSE "ROW", DA INSERIRE ALL'INTERNO CONSTANTE "OUTPUT"
 let output_row = document.createElement('div');
-output_row.classList.add('row');
+output_row.classList.add('row', 'justify-content-center', 'w-100');
 
 // DICHIARAZIONE E INIZIALIZZAZIONE VARIABILE CONTANTORE CELLE
 let cell = 1;
@@ -13,32 +13,37 @@ let cell = 1;
 const cell_size = 7;
 
 // CICLO FOR CHE STAMPA NUMERI DA 1 A 100
-for(let i = 1; i <= 100; i++){
+for(let i = 1; i <= 100; i++){    
 
     // DICHIARAZIONE E INIZIALIZZAZIONE CONSTANTE CON TAG DIV, DA INSERIRE ALL'INTERNO CONSTANTE "OUTPUT_ROW"
     const output_number = document.createElement('div');
+    output_number.classList.add('output_number', 'd-flex', 'justify-content-center', 'align-items-center', 'fw-bold');
 
     // CONTROLLO CHE IL NUMERO STAMPATO È MULTIPLO SIA DI 3 CHE DI 5
     if (i % 3 === 0 && i % 5 === 0){
         let number = "FizzBuzz";
+        output_number.classList.add('bgcolor_fizzbuzz');
         output_number.append(number);
     }
 
     // CONTROLLO CHE IL NUMERO STAMPATO È MULTIPLO DI 3
     else if (i % 3 === 0){
         let number = "Fizz";
+        output_number.classList.add('bgcolor_fizz');
         output_number.append(number);
     } 
 
     // CONTROLLO CHE IL NUMERO STAMPATO È MULTIPLO DI 5
     else if (i % 5 === 0){
         let number = "Buzz";
+        output_number.classList.add('bgcolor_buzz');
         output_number.append(number);
     } 
     
     // IL NUMERO STAMPATO NON È MULTIPLO NÈ DI 3, NÈ DI 5, NÈ DI ENTRAMBI, QUINDI STAMPO IL NUMERO
     else{
         let number = i;
+        output_number.classList.add('bgcolor_number');
         output_number.append(number);
     }
 
@@ -61,6 +66,6 @@ for(let i = 1; i <= 100; i++){
 
         // RESET VARIABILE CON TAG DIV E CLASSE "ROW"
         output_row = document.createElement('div');
-        output_row.classList.add('row');
+        output_row.classList.add('row', 'justify-content-center', 'w-100');
     }
 }

@@ -4,5 +4,38 @@
     box-sizing: border-box;
 }
 
+/* TITLE */
+.fizzbuzz_title{
+    font-weight: 700;
+    font-size: 50px;
+    color: #fff;
+}
+
+/* OUTPUT NUMBER */
+div.output_number{
+    width: 80px;
+    height: 80px;
+    margin: 10px;
+}
+
 /* UTILITIES */
+.bgcolor_fullscreen{
+    background-color: #083B4C;
+}
+
+.bgcolor_fizzbuzz{
+    background-color: #F0466F;
+}
+
+.bgcolor_fizz{
+    background-color: #0CD6A1;
+}
+
+.bgcolor_buzz{
+    background-color: #FFD166;
+}
+
+.bgcolor_number{
+    background-color: #1389B2;
+}
 /* FINE UTILITIES */
