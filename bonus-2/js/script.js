@@ -4,7 +4,7 @@ const output = document.getElementById('output');
 
 // DICHIARAZIONE E INIZIALIZZAZIONE VARIABILE CON TAG DIV E CLASSE "ROW", DA INSERIRE ALL'INTERNO CONSTANTE "OUTPUT"
 let output_row = document.createElement('div');
-output_row.classList.add('row', 'justify-content-center', 'w-100');
+output_row.classList.add('row', 'justify-content-center', 'm-auto', 'w-100');
 
 // DICHIARAZIONE E INIZIALIZZAZIONE VARIABILE CONTANTORE CELLE
 let cell = 1;
@@ -17,7 +17,7 @@ for(let i = 1; i <= 100; i++){
 
     // DICHIARAZIONE E INIZIALIZZAZIONE CONSTANTE CON TAG DIV, DA INSERIRE ALL'INTERNO CONSTANTE "OUTPUT_ROW"
     const output_number = document.createElement('div');
-    output_number.classList.add('output_number', 'd-flex', 'justify-content-center', 'align-items-center', 'fw-bold');
+    output_number.classList.add('output_number_col', 'd-flex', 'justify-content-center', 'align-items-center', 'fw-bold');
 
     // CONTROLLO CHE IL NUMERO STAMPATO È MULTIPLO SIA DI 3 CHE DI 5
     if (i % 3 === 0 && i % 5 === 0){
@@ -66,6 +66,6 @@ for(let i = 1; i <= 100; i++){
 
         // RESET VARIABILE CON TAG DIV E CLASSE "ROW"
         output_row = document.createElement('div');
-        output_row.classList.add('row', 'justify-content-center', 'w-100');
+        output_row.classList.add('row', 'justify-content-center', 'm-auto', 'w-100');
     }
 }
