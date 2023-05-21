@@ -1,11 +1,21 @@
 "use strict";
+// DICHIARAZIONE E INIZIALIZZAZIONE CONSTANTE RIFERITA AL TAG HTML CON ID "OUTPUT"
+const output = document.getElementById('output');
+
+// DICHIARAZIONE E INIZIALIZZAZIONE VARIABILE CON TAG DIV E CLASSE "ROW", DA INSERIRE ALL'INTERNO CONSTANTE "OUTPUT"
+let output_row = document.createElement('div');
+output_row.classList.add('row');
+
+// DICHIARAZIONE E INIZIALIZZAZIONE VARIABILE CONTANTORE CELLE
+let cell = 1;
+
+// DICHIARAZIONE E INIZIALIZZAZIONE CONSTANTE SIZE MASSIMA CELLE
+const cell_size = 7;
+
 // CICLO FOR CHE STAMPA NUMERI DA 1 A 100
 for(let i = 1; i <= 100; i++){
 
-    // DICHIARAZIONE E INIZIALIZZAZIONE CONSTANTE RIFERITA AL TAG HTML CON ID "OUTPUT"
-    const output = document.getElementById('output');
-
-    // DICHIARAZIONE E INIZIALIZZAZIONE CONSTANTE CON TAG DIV, DA INSERIRE ALL'INTERNO CONSTANTE "OUTPUT"
+    // DICHIARAZIONE E INIZIALIZZAZIONE CONSTANTE CON TAG DIV, DA INSERIRE ALL'INTERNO CONSTANTE "OUTPUT_ROW"
     const output_number = document.createElement('div');
 
     // CONTROLLO CHE IL NUMERO STAMPATO È MULTIPLO SIA DI 3 CHE DI 5
@@ -32,6 +42,25 @@ for(let i = 1; i <= 100; i++){
         output_number.append(number);
     }
 
-    // INSERIMENTO CONTENUTO CONSTANTE "OUTPUT_NUMBER" ALL'INTERNO DELLA COSTANTE "OUTPUT"
-    output.append(output_number);
+    // INSERIMENTO CONTENUTO CONSTANTE "OUTPUT_NUMBER" ALL'INTERNO DELLA COSTANTE "OUTPUT_ROW"
+    output_row.append(output_number);
+    
+    // INSERIMENTO CONTENUTO CONSTANTE "OUTPUT_ROW" ALL'INTERNO DELLA COSTANTE "OUTPUT"
+    output.append(output_row);
+
+    // CONTROLLO CHE I NUMERI INSERITI NELLA ROW SIANO MASSIMO 7
+    if (cell < cell_size){
+
+        // INCREMENTO VARIABILE CONTANTORE CELLE
+        cell++;
+
+    } else{
+
+        // RESET VARIABILE CONTANTORE CELLE
+        cell = 1;
+
+        // RESET VARIABILE CON TAG DIV E CLASSE "ROW"
+        output_row = document.createElement('div');
+        output_row.classList.add('row');
+    }
 }
