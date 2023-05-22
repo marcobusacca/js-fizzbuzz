@@ -39,3 +39,12 @@ div.output_number_col{
     background-color: #1389B2;
 }
 /* FINE UTILITIES */
+
+/* LAYOUT RESPONSIVE (DESKTOP FIRST) */
+    /* MOBILE */
+    @media screen and (max-width: 768px) {
+        .fizzbuzz_title{
+            font-size: 45px;
+        }
+    }
+/* FINE LAYOUT RESPONSIVE */
