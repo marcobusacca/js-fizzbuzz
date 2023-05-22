@@ -1,9 +1,9 @@
 "use strict";
+// DICHIARAZIONE E INIZIALIZZAZIONE CONSTANTE RIFERITA AL TAG HTML CON ID "OUTPUT"
+const output = document.getElementById('output');
+
 // CICLO FOR CHE STAMPA NUMERI DA 1 A 100
 for(let i = 1; i <= 100; i++){
-
-    // DICHIARAZIONE E INIZIALIZZAZIONE CONSTANTE RIFERITA AL TAG HTML CON ID "OUTPUT"
-    const output = document.getElementById('output');
 
     // DICHIARAZIONE E INIZIALIZZAZIONE CONSTANTE CON TAG DIV, DA INSERIRE ALL'INTERNO CONSTANTE "OUTPUT"
     const output_number = document.createElement('div');
