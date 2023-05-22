@@ -34,6 +34,8 @@ PROBLEMA : Scrivi un programma che stampi in Console i numeri da 1 a 100.
 
         1.3.3 - Applica all'elemento inserito nel DOM uno stile (STILE_3);
 
+    1.4 - ALTRIMENTI Stampa il numero.
+
 
 
 2 - Dai uno stile a tutta la pagina HTML (Tramite Bootstrap Oppure CSS)

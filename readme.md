@@ -21,3 +21,5 @@ PROBLEMA : Scrivi un programma che stampi in Console i numeri da 1 a 100.
     1.3 - ALTRIMENTI SE il numero stampato è multiplo soltanto di 5, ALLORA
 
         1.3.1 - Al posto del numero, stampa “Buzz”;
+
+    1.4 - ALTRIMENTI Stampa il numero.

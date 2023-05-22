@@ -27,3 +27,5 @@ PROBLEMA : Scrivi un programma che stampi in Console i numeri da 1 a 100.
         1.3.1 - Al posto del numero, stampa “Buzz”;
 
         1.3.2 - Stampa il risultato nel DOM;
+
+    1.4 - ALTRIMENTI Stampa il numero.
